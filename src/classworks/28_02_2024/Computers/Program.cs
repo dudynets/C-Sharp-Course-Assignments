@@ -1,10 +1,10 @@
 ﻿class Computer
 {
     public string Brand { get; }
-    public int ProcessorSpeed { get; }
-    public int RAM { get; }
-    public int Disk { get; }
-    public int Price { get; }
+    public int ProcessorSpeed { get; set; }
+    public int RAM { get; set; }
+    public int Disk { get; set; }
+    public int Price { get; set; }
 
     public Computer(string brand, int processorSpeed, int ram, int disk, int price)
     {
@@ -20,25 +20,25 @@
         return $@"Brand: {Brand}
         Processor speed: {ProcessorSpeed} MHz
         RAM: {RAM}GB
-        Disk: {Disk}GB
+        Main disk: {Disk}GB
         Price: ${Price}";
     }
 }
 
 class Server : Computer
 {
-    public int DiskSpace { get; }
+    public List<int> AdditionalDisks { get; }
 
-    public Server(string brand, int processorSpeed, int ram, int disk, int price, int diskSpace) : base(brand, processorSpeed, ram, disk, price)
+    public Server(string brand, int processorSpeed, int ram, int disk, int price, List<int> additionalDisks) : base(brand, processorSpeed, ram, disk, price)
     {
-        DiskSpace = diskSpace;
+        AdditionalDisks = additionalDisks;
     }
 
     public override string ToString()
     {
         return $@"Server:
         {base.ToString()}
-        Disk space: {DiskSpace}GB";
+        Additional disks: {string.Join("GB, ", AdditionalDisks)}GB";
     }
 }
 
@@ -65,9 +65,9 @@ class Program
     {
         List<Computer> computers =
         [
-            new Server("Dell", 2000, 8, 1000, 1000, 2000),
-            new Server("HP", 3000, 16, 2000, 2000, 4000),
-            new Server("Lenovo", 2500, 12, 1500, 1500, 3000),
+            new Server("Dell", 2000, 8, 1000, 1000, [2000]),
+            new Server("HP", 3000, 16, 2000, 2000, [4000, 4000, 4000]),
+            new Server("Lenovo", 2500, 12, 1500, 1500, [3000]),
             new WorkStation("Dell", 2000, 8, 1000, 1000, 20),
             new WorkStation("HP", 3000, 16, 2000, 2000, 40),
             new WorkStation("Lenovo", 2500, 12, 1500, 1500, 30),
@@ -77,7 +77,27 @@ class Program
         PrintTotalPrice(computers);
         PrintTotalDiskSpace(computers);
         PrintMaxMonitorSize(computers);
+
+
+
+        //  List<Computer> computersgroupedbybrand= computers.GroupBy(c => c.Brand).SelectMany(g => g).ToList();
+
+
+        var groupedComputers = computers.GroupBy(c => c.Brand);
+
+        foreach (var group in groupedComputers)
+        {
+            Console.WriteLine(group.Key);
+            foreach (var computer in group)
+            {
+                Console.WriteLine(computer);
+            }
+        }
+
+
+
     }
+
 
     static void PrintAllComputers(List<Computer> computers)
     {
@@ -110,7 +130,8 @@ class Program
         var servers = computers.OfType<Server>();
         foreach (var server in servers)
         {
-            Console.WriteLine($"    {server.Brand}: {server.DiskSpace}GB");
+            var totalDiskSpace = server.Disk + server.AdditionalDisks.Sum();
+            Console.WriteLine($"    {server.Brand}: {totalDiskSpace}GB");
         }
 
         Console.WriteLine();
