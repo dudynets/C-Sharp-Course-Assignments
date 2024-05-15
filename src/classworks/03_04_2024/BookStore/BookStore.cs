@@ -1,4 +1,6 @@
-﻿namespace BookStore;
+﻿using System.Net.Security;
+
+namespace BookStore;
 
 public class Book
 {
