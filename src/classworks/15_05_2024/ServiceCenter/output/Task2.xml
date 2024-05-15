@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevenueReport>
+  <ProductCategory Name="Books">
+    <Operation Name="Operation 3" Sum="300" />
+  </ProductCategory>
+  <ProductCategory Name="Electronics">
+    <Operation Name="Operation 3" Sum="300" />
+    <Operation Name="Operation 2" Sum="200" />
+    <Operation Name="Operation 1" Sum="100" />
+  </ProductCategory>
+  <ProductCategory Name="Home Appliances">
+    <Operation Name="Operation 3" Sum="600" />
+    <Operation Name="Operation 2" Sum="200" />
+    <Operation Name="Operation 1" Sum="100" />
+  </ProductCategory>
+</RevenueReport>

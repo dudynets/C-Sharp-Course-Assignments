@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProductCategories>
+    <ProductCategory Id="1">
+        <Name>Electronics</Name>
+        <WarrantyYears>2</WarrantyYears>
+    </ProductCategory>
+    <ProductCategory Id="2">
+        <Name>Home Appliances</Name>
+        <WarrantyYears>3</WarrantyYears>
+    </ProductCategory>
+    <ProductCategory Id="3">
+        <Name>Books</Name>
+        <WarrantyYears>0</WarrantyYears>
+    </ProductCategory>
+</ProductCategories>

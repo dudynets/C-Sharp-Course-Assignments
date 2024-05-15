@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WarrantyReport>
+  <Operation Name="Operation 1" Count="2" />
+  <Operation Name="Operation 2" Count="2" />
+  <Operation Name="Operation 3" Count="2" />
+</WarrantyReport>

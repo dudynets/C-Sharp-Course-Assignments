@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceReports>
+    <ServiceReport>
+        <ProductCategoryId>1</ProductCategoryId>
+        <OperationId>1</OperationId>
+        <ProductReleaseDate>2022-01-01</ProductReleaseDate>
+    </ServiceReport>
+    <ServiceReport>
+        <ProductCategoryId>2</ProductCategoryId>
+        <OperationId>2</OperationId>
+        <ProductReleaseDate>2022-02-01</ProductReleaseDate>
+    </ServiceReport>
+    <ServiceReport>
+        <ProductCategoryId>3</ProductCategoryId>
+        <OperationId>3</OperationId>
+        <ProductReleaseDate>2022-03-01</ProductReleaseDate>
+    </ServiceReport>
+    <ServiceReport>
+        <ProductCategoryId>2</ProductCategoryId>
+        <OperationId>1</OperationId>
+        <ProductReleaseDate>2022-04-01</ProductReleaseDate>
+    </ServiceReport>
+    <ServiceReport>
+        <ProductCategoryId>1</ProductCategoryId>
+        <OperationId>2</OperationId>
+        <ProductReleaseDate>2022-05-01</ProductReleaseDate>
+    </ServiceReport>
+    <ServiceReport>
+        <ProductCategoryId>1</ProductCategoryId>
+        <OperationId>3</OperationId>
+        <ProductReleaseDate>2022-06-01</ProductReleaseDate>
+    </ServiceReport>
+    <ServiceReport>
+        <ProductCategoryId>2</ProductCategoryId>
+        <OperationId>3</OperationId>
+        <ProductReleaseDate>2022-07-01</ProductReleaseDate>
+    </ServiceReport>
+    <ServiceReport>
+        <ProductCategoryId>2</ProductCategoryId>
+        <OperationId>3</OperationId>
+        <ProductReleaseDate>2010-07-01</ProductReleaseDate>
+    </ServiceReport>
+</ServiceReports>
