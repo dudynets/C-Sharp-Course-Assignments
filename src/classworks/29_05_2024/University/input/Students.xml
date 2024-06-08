@@ -1,0 +1,27 @@
+<Students>
+    <Student Id="1">
+        <Name>John</Name>
+        <Surname>Doe</Surname>
+        <Group>A</Group>
+    </Student>
+    <Student Id="2">
+        <Name>Mike</Name>
+        <Surname>Doe</Surname>
+        <Group>A</Group>
+    </Student>
+    <Student Id="3">
+        <Name>Alice</Name>
+        <Surname>Smith</Surname>
+        <Group>B</Group>
+    </Student>
+    <Student Id="4">
+        <Name>Bob</Name>
+        <Surname>Smith</Surname>
+        <Group>B</Group>
+    </Student>
+    <Student Id="5">
+        <Name>Charlie</Name>
+        <Surname>Brown</Surname>
+        <Group>C</Group>
+    </Student>
+</Students>

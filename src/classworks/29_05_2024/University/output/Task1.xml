@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<University>
+  <Group Name="A">
+    <Student Name="Doe J.">
+      <TaskResult TaskId="1" Subject="" Mark="10" />
+      <TaskResult TaskId="2" Subject="" Mark="9" />
+      <TaskResult TaskId="3" Subject="" Mark="8" />
+      <TaskResult TaskId="4" Subject="" Mark="7" />
+      <TaskResult TaskId="5" Subject="" Mark="6" />
+    </Student>
+    <Student Name="Doe M.">
+      <TaskResult TaskId="1" Subject="" Mark="10" />
+      <TaskResult TaskId="2" Subject="" Mark="9" />
+      <TaskResult TaskId="3" Subject="" Mark="8" />
+    </Student>
+  </Group>
+  <Group Name="B">
+    <Student Name="Smith A.">
+      <TaskResult TaskId="1" Subject="" Mark="10" />
+    </Student>
+    <Student Name="Smith B.">
+      <TaskResult TaskId="1" Subject="" Mark="10" />
+    </Student>
+  </Group>
+</University>
